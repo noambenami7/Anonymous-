@@ -1,0 +1,1 @@
+# Anonymous-In this script there is a connection to Anonymous and after that a connection in SSH but before that there are functions that check if the tools I need for this are in the system and if not then they will go straight down 
