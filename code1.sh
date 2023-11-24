@@ -12,10 +12,16 @@ function nba1() {
   fi
 
 }
-
-function nba2() {
+function nba1() {
   if ! command -v geoiplookup &>/dev/null; then
     sudo apt-get install geoiplookup -qq -y > /dev/null 2>&1
+  else
+    echo  "[%] nmap is already installed."
+  fi
+
+function nba2() {
+  if ! command -v nmap &>/dev/null; then
+    sudo apt-get install nmap -qq -y > /dev/null 2>&1
   else
     echo "[%] geoiplookup is already installed."
   fi
